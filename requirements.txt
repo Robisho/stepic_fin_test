@@ -13,7 +13,7 @@ CherryPy==18.5.0
 colorama==0.4.3
 cssselect==1.1.0
 cycler==0.10.0
-Django==1.9
+Django==1.11.28
 entrypoints==0.3
 fake-useragent==0.1.11
 flake8==3.7.9
