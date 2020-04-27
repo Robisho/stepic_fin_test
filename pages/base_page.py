@@ -9,3 +9,6 @@ class BasePage():
 
     def open(self):
         self.browser.get(self.url)
+
+    def funcname(self):
+        pass
