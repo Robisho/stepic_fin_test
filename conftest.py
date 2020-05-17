@@ -40,5 +40,5 @@ def browser(request):
             '--browser_name должно быть chrome или firefox')
     yield browser
     print('\nQuit browser....')
-    time.sleep(5)
+    # time.sleep(5)
     browser.quit()
