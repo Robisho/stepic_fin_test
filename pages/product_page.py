@@ -27,3 +27,13 @@ class ProductPage(BasePage):
 
         assert base_name == add_name, 'Добавлена другая книга!'
         assert base_price == add_price, 'Цена не соответствует!'
+
+    def should_be_success_message_is_disappeared(self):
+        # проверка исчезновения сообщения об успешном действии
+        assert self.is_disappeared(
+            *ProductPageLocators.SUCCESS_MESSAGE), 'Сообщение об успехе не исчезло'
+
+    def should_not_be_success_message(self):
+        # проверка отсутствия сообщения об успешном действии
+        assert self.is_not_element_present(
+            *ProductPageLocators.SUCCESS_MESSAGE), "Сообщение об успехе представлено, но не должно быть"
